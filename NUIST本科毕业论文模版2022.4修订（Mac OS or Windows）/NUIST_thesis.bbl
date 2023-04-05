@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -11,11 +11,26 @@
   \let\eprint\href
 \fi
 
-\bibitem[Tobias et~al.(2021)Tobias, Hubert, Irene, and Elisabeth]{x1}
-Tobias O, Hubert P, Irene H, et~al.
-\newblock The not so short introduction to latex2e\allowbreak[EB/OL].
-\newblock 2021\allowbreak[2021-06-05].
-\newblock \url{http://tug.ctan.org/info/lshort/english/lshort.pdf}.
+\bibitem[高德地图(2023)]{x1}
+高德地图.
+\newblock 2022 年度中国主要城市交通分析报告\allowbreak[EB/OL].
+\newblock 2023\allowbreak[2023-01-18].
+\newblock
+  \url{https://report.amap.com/share.do?id=a184b07685866c850185c2e9da200007}.
+
+\bibitem[南京市交通运输局(2022)]{njjt}
+南京市交通运输局.
+\newblock
+  2022年一季度南京交通经济运行综合分析报告\allowbreak[EB/OL].
+\newblock 2022\allowbreak[2022-06-10].
+\newblock
+  \url{http://jtj.nanjing.gov.cn/njsjtysj/202206/t20220610_3442578.html}.
+
+\bibitem[百度地图(2023)]{bd}
+百度地图.
+\newblock 2022 年度中国城市交通报告\allowbreak[EB/OL].
+\newblock 2023\allowbreak[2023-03-01].
+\newblock \url{https://jiaotong.baidu.com/cms/reports/traffic/2022/index.html}.
 
 \bibitem[{CTeX-org}(2021)]{x5}
 {CTeX-org}.

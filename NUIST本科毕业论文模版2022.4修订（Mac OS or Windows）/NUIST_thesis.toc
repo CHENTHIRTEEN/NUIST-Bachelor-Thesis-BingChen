@@ -1,5 +1,5 @@
 \contentsline {section}{\numberline {1}绪言}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}\LaTeX 介绍}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.1}研究背景和意义}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}本模板介绍}{1}{subsection.1.2}%
 \contentsline {section}{\numberline {2}NUIST模板介绍}{1}{section.2}%
 \contentsline {subsection}{\numberline {2.1}适合人群}{1}{subsection.2.1}%
@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {2.5}参考文献编译方式}{2}{subsection.2.5}%
 \contentsline {section}{\numberline {3}模板中命令的使用方法}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}分级标题}{2}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}NUIST模板中新定义命令介绍}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}NUIST模板中新定义命令介绍}{3}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}命令用法详解}{3}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}带参命令用法}{3}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}不带参命令用法}{4}{subsubsection.3.3.2}%
@@ -17,27 +17,27 @@
 \contentsline {section}{\numberline {5}排版图片}{5}{section.5}%
 \contentsline {subsection}{\numberline {5.1}支持图片格式}{5}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}插入图片方法}{5}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}并列图及添加子图标题}{6}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}并列图及添加子图标题}{5}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}图片文件夹的指定}{8}{subsection.5.4}%
 \contentsline {section}{\numberline {6}排版表格}{8}{section.6}%
-\contentsline {section}{\numberline {7}排版代码}{8}{section.7}%
+\contentsline {section}{\numberline {7}排版代码}{9}{section.7}%
 \contentsline {section}{\numberline {8}排版参考文献及引用}{9}{section.8}%
 \contentsline {subsection}{\numberline {8.1}使用bibliography排版参考文献}{9}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}（已弃用）thebibliography环境排版参考文献}{10}{subsection.8.2}%
-\contentsline {section}{\numberline {9}写在后面(第一版作者)}{10}{section.9}%
+\contentsline {subsection}{\numberline {8.2}（已弃用）thebibliography环境排版参考文献}{11}{subsection.8.2}%
+\contentsline {section}{\numberline {9}写在后面(第一版作者)}{11}{section.9}%
 \contentsline {section}{\numberline {10}第二版修订说明}{11}{section.10}%
 \contentsline {subsection}{\numberline {10.1}第二版！新鲜出炉！}{11}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}修订者的话}{11}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}修订者的话}{12}{subsection.10.2}%
 \contentsline {section}{\numberline {11}2021.6版修订说明}{12}{section.11}%
 \contentsline {subsection}{\numberline {11.1}南信大与PDF格式论文}{12}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}更新说明}{12}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}闲话}{13}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}致谢}{13}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.2}更新说明}{13}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}闲话}{14}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}致谢}{14}{subsection.11.4}%
 \contentsline {section}{\numberline {12}2022版修订说明}{14}{section.12}%
 \contentsline {subsection}{\numberline {12.1}更新内容}{14}{subsection.12.1}%
 \contentsline {section}{\numberline {13}2022.4版修订说明}{14}{section.13}%
 \contentsline {subsection}{\numberline {13.1}更新内容}{14}{subsection.13.1}%
 \contentsline {subsection}{\numberline {13.2}致谢}{14}{subsection.13.2}%
-\contentsline {section}{参考文献}{14}{section*.10}%
-\contentsline {section}{致谢}{15}{section*.11}%
+\contentsline {section}{参考文献}{15}{section*.10}%
+\contentsline {section}{致谢}{16}{section*.11}%
 \contentsfinish 

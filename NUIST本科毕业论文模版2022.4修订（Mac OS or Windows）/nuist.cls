@@ -52,8 +52,8 @@
 % GB/T 7714-2015 使用形如\bibliography{20171344016_graduation_thesis}的命令引入.bib文件
 \usepackage{gbt7714}
 \renewcommand*{\bibfont}{\zihao{-5}}
-\bibliographystyle{gbt7714-2005-numerical}%GBT7714 顺序编码制
-
+% \bibliographystyle{gbt7714-2005-numerical}%GBT7714 顺序编码制
+\bibliographystyle{gbt7714-numerical}
 %第一版使用的thebibliography环境排版参考文献
 %\usepackage[numbers,sort&compress]{natbib}
 %\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
