@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -11,13 +11,6 @@
   \let\eprint\href
 \fi
 
-\bibitem[高德地图(2023)]{x1}
-高德地图.
-\newblock 2022 年度中国主要城市交通分析报告\allowbreak[EB/OL].
-\newblock 2023\allowbreak[2023-01-18].
-\newblock
-  \url{https://report.amap.com/share.do?id=a184b07685866c850185c2e9da200007}.
-
 \bibitem[南京市交通运输局(2022)]{njjt}
 南京市交通运输局.
 \newblock
@@ -26,11 +19,25 @@
 \newblock
   \url{http://jtj.nanjing.gov.cn/njsjtysj/202206/t20220610_3442578.html}.
 
+\bibitem[高德地图(2023)]{x1}
+高德地图.
+\newblock 2022 年度中国主要城市交通分析报告\allowbreak[EB/OL].
+\newblock 2023\allowbreak[2023-01-18].
+\newblock
+  \url{https://report.amap.com/share.do?id=a184b07685866c850185c2e9da200007}.
+
 \bibitem[百度地图(2023)]{bd}
 百度地图.
 \newblock 2022 年度中国城市交通报告\allowbreak[EB/OL].
 \newblock 2023\allowbreak[2023-03-01].
 \newblock \url{https://jiaotong.baidu.com/cms/reports/traffic/2022/index.html}.
+
+\bibitem[Chierici et~al.(2004)Chierici, Cordone, and Maja]{c1}
+Chierici A, Cordone R, Maja R.
+\newblock The demand-dependent optimization of regular train
+  timetables\allowbreak[J].
+\newblock Electronic Notes in Discrete Mathematics, 2004, 17\allowbreak
+  (99-104).
 
 \bibitem[{CTeX-org}(2021)]{x5}
 {CTeX-org}.
