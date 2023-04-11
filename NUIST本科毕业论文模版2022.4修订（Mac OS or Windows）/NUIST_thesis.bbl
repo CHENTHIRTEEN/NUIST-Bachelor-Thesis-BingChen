@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -38,6 +38,14 @@ Chierici A, Cordone R, Maja R.
   timetables\allowbreak[J].
 \newblock Electronic Notes in Discrete Mathematics, 2004, 17\allowbreak
   (99-104).
+
+\bibitem[Nair et~al.(2021)Nair, Bartunov, Gimeno, von Glehn, Lichocki, Lobov,
+  O'Donoghue, Sonnerat, Tjandraatmadja, Wang, Addanki, Hapuarachchi, Keck,
+  Keeling, Kohli, Ktena, Li, Vinyals, and Zwols]{nair2021solving}
+Nair V, Bartunov S, Gimeno F, et~al.
+\newblock Solving mixed integer programs using neural networks\allowbreak[Z].
+\newblock 2021.
+\newblock arXiv: \eprint{https://arxiv.org/abs/2012.13349}{2012.13349}.
 
 \bibitem[{CTeX-org}(2021)]{x5}
 {CTeX-org}.
