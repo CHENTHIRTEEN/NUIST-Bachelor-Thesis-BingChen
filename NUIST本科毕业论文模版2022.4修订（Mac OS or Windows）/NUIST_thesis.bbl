@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -32,12 +32,34 @@
 \newblock 2023\allowbreak[2023-03-01].
 \newblock \url{https://jiaotong.baidu.com/cms/reports/traffic/2022/index.html}.
 
-\bibitem[Chierici et~al.(2004)Chierici, Cordone, and Maja]{c1}
+\bibitem[Jiang et~al.(2022)Jiang, Ma, and Koutsopoulos]{DLOD2022}
+Jiang W, Ma Z, Koutsopoulos H~N.
+\newblock Deep learning for short-term origin–destination passenger flow
+  prediction under partial observability in urban railway
+  systems\allowbreak[J].
+\newblock Neural Computing and Applications, 2022, 34: 4813–4830.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Vaswani A, Shazeer N, Parmar N, et~al.
+\newblock Attention is all you need\allowbreak[Z].
+\newblock 2017.
+\newblock arXiv: \eprint{https://arxiv.org/abs/1706.03762}{1706.03762}.
+
+\bibitem[高榕\ 等(2021)高榕, 万以亮, 邵雄凯, and
+  吴歆韵]{transformer2022}
+高榕, 万以亮, 邵雄凯, 等.
+\newblock
+  面向改进的时空Transformer的交通流量预测模型\allowbreak[EB/OL].
+\newblock \allowbreak(2021-03-14)\allowbreak[2023-04-12].
+\newblock
+  \url{http://kns.cnki.net/kcms/detail/11.2127.TP.20220618.1141.008.html}.
+
+\bibitem[Chierici et~al.(2004)Chierici, Cordone, and Maja]{CHIERICI200499}
 Chierici A, Cordone R, Maja R.
 \newblock The demand-dependent optimization of regular train
   timetables\allowbreak[J].
-\newblock Electronic Notes in Discrete Mathematics, 2004, 17\allowbreak
-  (99-104).
+\newblock Electronic Notes in Discrete Mathematics, 2004, 17: 99-104.
 
 \bibitem[Nair et~al.(2021)Nair, Bartunov, Gimeno, von Glehn, Lichocki, Lobov,
   O'Donoghue, Sonnerat, Tjandraatmadja, Wang, Addanki, Hapuarachchi, Keck,
@@ -47,39 +69,17 @@ Nair V, Bartunov S, Gimeno F, et~al.
 \newblock 2021.
 \newblock arXiv: \eprint{https://arxiv.org/abs/2012.13349}{2012.13349}.
 
-\bibitem[{CTeX-org}(2021)]{x5}
-{CTeX-org}.
-\newblock CTEX宏集手册\allowbreak[EB/OL].
-\newblock \allowbreak(2021-03-14)\allowbreak[2021-06-05].
-\newblock \url{http://mirrors.ctan.org/language/chinese/ctex/ctex.pdf}.
+\bibitem[Liu et~al.(2020)Liu, Li, Yang, and Yin]{8337127}
+Liu R, Li S, Yang L, et~al.
+\newblock Energy-efficient subway train scheduling design with time-dependent
+  demand based on an approximate dynamic programming approach\allowbreak[J].
+\newblock IEEE Transactions on Systems, Man, and Cybernetics: Systems, 2020,
+  50\allowbreak (7): 2475-2490.
 
-\bibitem[{CTeX-org}(2021)]{x6}
-{CTeX-org}.
-\newblock Ctex-org/gbt7714-bibtex-style\allowbreak[CP/OL].
-\newblock \allowbreak(2021-05-08)\allowbreak[2021-06-05].
-\newblock \url{https://github.com/CTeX-org/gbt7714-bibtex-style}.
-
-\bibitem[陈浩元(2015)]{陈浩元2015GB}
-陈浩元.
-\newblock GB/T
-  7714新标准对旧标准的主要修改及实施要点提示\allowbreak[J].
-\newblock 编辑学报, 2015, 27\allowbreak (4): 5.
-
-\bibitem[李平(2004)]{x2}
-李平.
-\newblock LaTeX2e 及常用宏包使用指南\allowbreak[M].
-\newblock {北京}: {清华大学出版社}, 2004.
-
-\bibitem[刘海洋(2013)]{x4}
-刘海洋.
-\newblock LaTeX 入门\allowbreak[M].
-\newblock {北京}: {电子工业出版社}, 2013.
-
-\bibitem[{給}(2021)]{geiNanJingXinXiGongChengDaXueLaTeXBiYeLunWenMoBanV31GengXinWuXuYiLaiCTeXRuanJian2021}
-{給}.
-\newblock {{南京信息工程大学LaTeX毕业论文模板V3}}.1更新
-  ({{无需依赖CTeX软件}}，修复了复制文字乱码的问题）\allowbreak[EB/OL].
-\newblock \allowbreak(2021-05-14)\allowbreak[2021-06-13].
-\newblock \url{https://latexstudio.net/index/details/index/mid/1524.html}.
+\bibitem[Liang et~al.(2023)Liang, Zang, Liu, Zheng, and Gao]{LIANG2023102845}
+Liang J, Zang G, Liu H, et~al.
+\newblock Reducing passenger waiting time in oversaturated metro lines with
+  passenger flow control policy\allowbreak[J].
+\newblock Omega, 2023, 117: 0305-0483.
 
 \end{thebibliography}
