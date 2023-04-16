@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -55,6 +55,13 @@ Vaswani A, Shazeer N, Parmar N, et~al.
 \newblock
   \url{http://kns.cnki.net/kcms/detail/11.2127.TP.20220618.1141.008.html}.
 
+\bibitem[Chen et~al.(2022)Chen, Liu, Chen, and Zhang]{9810964}
+Chen C, Liu Y, Chen L, et~al.
+\newblock Bidirectional spatial-temporal adaptive transformer for urban traffic
+  flow forecasting\allowbreak[J].
+\newblock IEEE Transactions on Neural Networks and Learning Systems, 2022:
+  1-13.
+
 \bibitem[Chierici et~al.(2004)Chierici, Cordone, and Maja]{CHIERICI200499}
 Chierici A, Cordone R, Maja R.
 \newblock The demand-dependent optimization of regular train
@@ -76,10 +83,43 @@ Liu R, Li S, Yang L, et~al.
 \newblock IEEE Transactions on Systems, Man, and Cybernetics: Systems, 2020,
   50\allowbreak (7): 2475-2490.
 
+\bibitem[Mo et~al.(2020)Mo, Yang, D’Ariano, Yin, Yao, and Gao]{8782134}
+Mo P, Yang L, D’Ariano A, et~al.
+\newblock Energy-efficient train scheduling and rolling stock circulation
+  planning in a metro line: A linear programming approach\allowbreak[J].
+\newblock IEEE Transactions on Intelligent Transportation Systems, 2020,
+  21\allowbreak (9): 3621-3633.
+
 \bibitem[Liang et~al.(2023)Liang, Zang, Liu, Zheng, and Gao]{LIANG2023102845}
 Liang J, Zang G, Liu H, et~al.
 \newblock Reducing passenger waiting time in oversaturated metro lines with
   passenger flow control policy\allowbreak[J].
 \newblock Omega, 2023, 117: 0305-0483.
+
+\bibitem[Yuan et~al.(2022)Yuan, Gao, Li, Liu, and Yang]{YUAN2022855}
+Yuan J, Gao Y, Li S, et~al.
+\newblock Integrated optimization of train timetable, rolling stock assignment
+  and short-turning strategy for a metro line\allowbreak[J].
+\newblock European Journal of Operational Research, 2022, 301\allowbreak (3):
+  855-874.
+
+\bibitem[王晓辉(2012)]{snu2012}
+王晓辉.
+\newblock 城市公共交通设施选址方法研究\allowbreak[D].
+\newblock 沈阳: 东北大学, 2012.
+
+\bibitem[Zhao et~al.(2020)Zhao and Zhang]{ZHAO2020102700}
+Zhao T, Zhang Y.
+\newblock Transportation infrastructure restoration optimization considering
+  mobility and accessibility in resilience measures\allowbreak[J].
+\newblock Transportation Research Part C: Emerging Technologies, 2020, 117:
+  102700.
+
+\bibitem[Zhang et~al.(2022)Zhang, Yang, Gao, and Yang]{ZHANG2022108493}
+Zhang H, Yang K, Gao Y, et~al.
+\newblock Accelerating benders decomposition for stochastic incomplete
+  multimodal hub location problem in many-to-many transportation and
+  distribution systems\allowbreak[J].
+\newblock International Journal of Production Economics, 2022, 248: 108493.
 
 \end{thebibliography}
