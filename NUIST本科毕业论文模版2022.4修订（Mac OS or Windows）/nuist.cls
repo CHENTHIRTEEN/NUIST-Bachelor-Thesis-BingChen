@@ -13,6 +13,7 @@
 \usepackage{layout}
 \pagestyle{plain}                   %设置页眉页脚 
 
+
 \setlength\textfloatsep{10pt}%浮动体出现在页首或者页底时，浮动体与下方或者上方文字之间的距离
 \setlength\abovecaptionskip{8pt}%图表标题上方的空白距离
 \setlength\belowcaptionskip{6pt}%图表标题下方的空白距离

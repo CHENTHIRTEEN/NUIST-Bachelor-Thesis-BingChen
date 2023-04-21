@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -126,5 +126,20 @@ Zhang H, Yang K, Gao Y, et~al.
 《运筹学》教材编写组.
 \newblock 运筹学\allowbreak[M].
 \newblock {北京}: {清华大学出版社}, 2012.
+
+\bibitem[王炜\ 等(2011)王炜 and 过秀成]{jtgc}
+王炜, 过秀成.
+\newblock 交通工程学\allowbreak[M].
+\newblock {南京}: {东南大学出版社}, 2011.
+
+\bibitem[韩伯棠(2020)]{gycx}
+韩伯棠.
+\newblock 管理运筹学\allowbreak[M].
+\newblock {北京}: {高等教育出版社}, 2020.
+
+\bibitem[盛骤\ 等(2020)盛骤, 谢式千, and 潘承毅]{gll}
+盛骤, 谢式千, 潘承毅.
+\newblock 概率论与数理统计\allowbreak[M].
+\newblock {北京}: {高等教育出版社}, 2020.
 
 \end{thebibliography}

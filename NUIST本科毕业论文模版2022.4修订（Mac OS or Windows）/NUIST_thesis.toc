@@ -5,5 +5,15 @@
 \contentsline {subsection}{\numberline {1.4}论文组织结构}{4}{subsection.1.4}%
 \contentsline {section}{\numberline {2}研究相关理论}{5}{section.2}%
 \contentsline {subsection}{\numberline {2.1}排队论}{5}{subsection.2.1}%
-\contentsline {section}{参考文献}{6}{section*.5}%
+\contentsline {subsection}{\numberline {2.2}运输问题}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}线性规划}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}动态规划}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}图与网络模型}{7}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}对策论}{7}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}VSP问题}{8}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}离散事件仿真框架SimPy}{8}{subsection.2.8}%
+\contentsline {section}{\numberline {3}模型}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}问题描述}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}单服务台负指数分布排队系统}{8}{subsection.3.2}%
+\contentsline {section}{参考文献}{11}{section*.9}%
 \contentsfinish 
