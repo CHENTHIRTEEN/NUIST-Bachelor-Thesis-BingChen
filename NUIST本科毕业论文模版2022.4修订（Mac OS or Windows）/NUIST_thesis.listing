@@ -1,4 +1,19 @@
-\begin{lstlisting}[breaklines=true,language=Python]
-    # Hello World!
-    print('Hello World!')
-\end{lstlisting}
+    \begin{lstlisting}[breaklines=true,language=Python]
+        def runSys(env, numService, miuService):
+            sys = System(env, numService, miuService)
+            global initLen, customerList
+            moviegoer = initLen
+            for moviegoer in range(initLen):
+                customerList.append(Customer(moviegoer, env.now, initLen, 0))
+                env.process(inoutQueue(env, moviegoer, sys))
+            global queueLen
+            queueLen = initLen
+            while True:
+                reachInterval_ = random.expovariate(lambdaReachInterval)
+                yield env.timeout(reachInterval_)
+                if systemCapacity == None or queueLen <= systemCapacity:
+                    moviegoer += 1
+                    queueLen += 1
+                    customerList.append(Customer(moviegoer, env.now, queueLen, reachInterval_))
+                    env.process(inoutQueue(env, moviegoer, sys))
+    \end{lstlisting}

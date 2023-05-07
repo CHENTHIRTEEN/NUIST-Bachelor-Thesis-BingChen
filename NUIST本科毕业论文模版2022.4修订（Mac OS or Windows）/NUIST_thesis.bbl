@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -31,6 +31,11 @@
 \newblock 2022 年度中国城市交通报告\allowbreak[EB/OL].
 \newblock 2023\allowbreak[2023-03-01].
 \newblock \url{https://jiaotong.baidu.com/cms/reports/traffic/2022/index.html}.
+
+\bibitem[Hochreiter et~al.(1997)Hochreiter and Schmidhuber]{6795963}
+Hochreiter S, Schmidhuber J.
+\newblock Long short-term memory\allowbreak[J].
+\newblock Neural Computation, 1997, 9\allowbreak (8): 1735-1780.
 
 \bibitem[Jiang et~al.(2022)Jiang, Ma, and Koutsopoulos]{DLOD2022}
 Jiang W, Ma Z, Koutsopoulos H~N.
@@ -141,5 +146,15 @@ Zhang H, Yang K, Gao Y, et~al.
 盛骤, 谢式千, 潘承毅.
 \newblock 概率论与数理统计\allowbreak[M].
 \newblock {北京}: {高等教育出版社}, 2020.
+
+\bibitem[谭泽光\ 等(2002)谭泽光 and 姜启源]{2002}
+谭泽光, 姜启源.
+\newblock 公交车调度问题的数学模型\allowbreak[J].
+\newblock 工程数学学报, 2002, 19: 99-104.
+
+\bibitem[高梦琪(2020)]{bjtu2020}
+高梦琪.
+\newblock 基于机器学习的城市轨道交通客流预测\allowbreak[D].
+\newblock 北京: 北京交通大学, 2020.
 
 \end{thebibliography}
