@@ -11,15 +11,14 @@
 \contentsline {subsection}{\numberline {2.5}线性目标规划}{7}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}VSP问题}{7}{subsection.2.6}%
 \contentsline {section}{\numberline {3}算法设计与分析}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}现有交通调度方案分析}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}单服务台负指数分布排队系统建模}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}公交调度问题建模}{10}{subsection.3.3}%
-\contentsline {section}{\numberline {4}试验和结果}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}实验环境}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}数据准备}{12}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}评价指标}{14}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}实验与分析}{15}{subsection.4.4}%
-\contentsline {section}{\numberline {5}总结与展望}{18}{section.5}%
-\contentsline {section}{参考文献}{19}{section*.19}%
-\contentsline {section}{致谢}{21}{section*.20}%
+\contentsline {subsection}{\numberline {3.1}现有校园公交运行方案分析}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}单服务台负指数分布排队系统建模}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}公交调度问题建模}{14}{subsection.3.3}%
+\contentsline {section}{\numberline {4}试验和结果}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}实验环境}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}评价指标}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}实验与分析}{17}{subsection.4.3}%
+\contentsline {section}{\numberline {5}总结与展望}{19}{section.5}%
+\contentsline {section}{参考文献}{20}{section*.24}%
+\contentsline {section}{致谢}{22}{section*.25}%
 \contentsfinish 

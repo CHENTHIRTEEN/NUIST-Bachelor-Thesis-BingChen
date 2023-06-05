@@ -5,17 +5,227 @@
 % 然后建立交通网络的模型，根据模型列出对应的VSP问题方程并求解，以便之后优化问题的求解和模拟，
 % 使用SimPy包对不同结果进行模拟。
 
-\subsection{现有交通调度方案分析}
-现有运营方案下，校园公交人流量高峰时期常采用多车次连续发车的方法，
-由于公交线路站点大多均匀坐落在校园主干道上，高峰时期车辆行进速度也会受到主干道交通环境影响，
-导致部分站点排队时间较长；非高峰时期，为考虑运营成本，公交会在始发站待乘客达到一定数量后再发车，
-导致在非始发站点等待时间过长，现有的调度策略存在滞后性。通过对客流大数据进行挖掘分析，
-运用机器学习算法对客流量模式进行识别，通过该模式建立数学模型，
-使用运筹学方法从成本、效益、乘客舒适度等多个角度出发，对公交站定址、
-调度策略等特征进行优化，最终解决现有策略下校园公共交通系统中的缺陷。
+\subsection{现有校园公交运行方案分析}
+现有运营方案下，校园公交共有12个站点，分别坐落在校园主干道上，现有的公交线路图如图~\ref{fig1}~所示。
+每班次平均运营时间约为15分钟，站点间平均运行时间约为40s $\sim$ 60s。车辆到站后平均服务时间约为3s，车站乘客平均等待时间约为6分钟。
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.45\textwidth]{figs/chap03/map1.png}
+\caption{校园交通线路站点图}
+\label{fig1}
+\end{figure}
+
+在工作日运行间隔为5 $\sim$ 10分钟一次。在实际情况调查中，以两小时为一个周期。
+在该时间段内，共发车25次，平均4.8分钟发车一次。高峰时期采用多班次连续发出的方案，在某些路段会产生空车现象。统计所得的时刻表如图~\ref{fig2}~所示。
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figs/chap03/times1.png}
+    \caption{校园公交运营图}
+    \label{fig2}
+    \end{figure}
+
+乘客的主要OD（起始-到达）站点对主要分为跨校区站点和宿舍区到校园内主要建筑。以滨江食堂站点到行政楼南为例，该段线路上的主要OD对如图
+~\ref{fig3}~所示。
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figs/chap03/OD.png}
+    \caption{校园公交主要OD对}
+    \label{fig3}
+    \end{figure}
+根据原始资料作出乘客到达间隔和服务时间的经验分布，校园公交车站客流呈周期性变化，
+选择文德楼北上行线车站实地统计，该车站位于校门、宿舍楼、主教学楼连接处的枢纽位置，客流量较有代表性，采样地点如图~\ref{fig31}~。
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figs/chap03/map.png}
+    \caption{采样地点}
+    \label{fig31}
+\end{figure}
+
+原始数据记载乘客到达时刻和对应的等待时间，以 $\tau_i$ 表示第i个乘客到达的时刻，以s表示等待时间可以得出相继到达时间 $t_i \left(t_i = \tau_{i+1} - \tau_i\right)$ 和等待时间 $w_i$，
+它们的关系如图~\ref{fig32}~。
+    
+\begin{figure}[htbp!]
+    \center
+    \subfigure[$w_i + s_i - t_i > 0$]{\label{queue1}
+    \includegraphics[width=0.8\textwidth]{figs/chap03/queue1.png}
+    }
+    \\
+    \subfigure[$w_i + s_i - t_i < 0$]{\label{queue2}
+    \includegraphics[width=0.8\textwidth]{figs/chap03/queue2.png}
+    }
+    \caption{相继到达的间隔时间和排队等待时间关系示意图}\label{fig32}
+\end{figure}
+    
+由图~\ref{fig32}~可以得到如下关系：
+    
+间隔\quad \quad \quad \quad$t_i = \tau_{i+1} - \tau_i$
+    
+等待时间 \quad \quad 
+$
+w_{i+1} = 
+\begin{cases}
+    w_i + s_i - t_i,\quad w_i + s_i - t_i > 0
+    \\
+    0, \qquad \qquad \quad w_i + s_i - t_i < 0
+\end{cases}
+$
+    
+    
+    % \begin{figure}[htbp!]
+    %     \center
+    %     \subfigure[$w_i + s_i - t_i > 0$]{\label{queue1}
+    %     \includegraphics[width=0.5\textwidth]{figs/chap03/queue1.png}
+    %     }
+    %     \\
+    %     \subfigure[$w_i + s_i - t_i < 0$]{\label{queue2}
+    %     \includegraphics[width=0.5\textwidth]{figs/chap03/queue2.png}
+    %     }
+    %     \caption{相继到达的间隔时间和排队等待时间关系示意图}\label{fig32}
+    % \end{figure}
+    
+由图~\ref{fig32}~可以得到如下关系：
+    
+间隔\quad \quad \quad \quad$t_i = \tau_{i+1} - \tau_i$
+    
+等待时间 \quad \quad 
+$
+w_{i+1} = 
+\begin{cases}
+    w_i + s_i - t_i,\quad w_i + s_i - t_i > 0
+    \\
+    0, \qquad \qquad \quad w_i + s_i - t_i < 0
+\end{cases}
+$
+    
+
+以大约两节课的时间（两小时）为一个周期，5分钟为间隔进行采样，将所统计的一个周期内的客流数据
+经以上关系整理后所得结果如表~\ref{table_1}~所示。
+\begin{table}[htbp!]
+    \centering
+    \caption{车站乘客到达人数分布表}\label{table_1}
+    
+    \begin{tabular}{cccc}
+    \whline 
+    时间段 & 到达人数 & 时间段 & 到达人数 \\ 
+    \hline 
+    14:00$ \sim $14:05 & 18 &15:00$ \sim $15:05&5\\ 
+    14:06$ \sim $14:10 & 7 &15:06$ \sim $15:10&2\\ 
+    14:11$ \sim $14:15 & 4 &15:11$ \sim $15:15&3\\ 
+    14:16$ \sim $14:20 & 8 &15:16$ \sim $15:20&6\\ 
+    14:21$ \sim $14:25 & 1 &15:21$ \sim $15:25&5\\ 
+    14:26$ \sim $14:30 & 5 &15:26$ \sim $15:30&67\\ 
+    14:31$ \sim $14:35 & 1 &15:31$ \sim $15:35&8\\ 
+    14:36$ \sim $14:40 & 3 &15:36$ \sim $15:40&12\\ 
+    14:41$ \sim $14:45 & 5 &15:41$ \sim $15:45&8\\ 
+    14:46$ \sim $14:50 & 6 &15:46$ \sim $15:50&3\\ 
+    14:51$ \sim $14:55 & 2 &15:51$ \sim $15:55&4\\ 
+    14:56$ \sim $15:00 & 2 &15:56$ \sim $16:00&2\\ 
+    \whline 
+    \end{tabular}
+    \end{table}
+
+
+统计同时段内车辆到达时间，可以估算出乘客的平均等待时间，如表~\ref{teble_2}~所示。
+\begin{table}[htbp!]
+    \centering
+    \caption{车站平均等待时间表}\label{teble_2}
+    \begin{tabular}{cc}
+        \whline
+        等待时间（分钟） & 频次 \\
+        0 & 23\\
+        1 & 31\\
+        2 & 27\\
+        3 & 25\\
+        4 & 33\\
+        5 & 19\\
+        6 & 22\\
+        7 & 19\\
+        8 & 8\\\
+        >10&0 \\
+        \whline
+    \end{tabular}
+\end{table}
+
+由统计结果可以得到公交站这一排队系统的几个特征：
+
+平均到达率：$$\lambda \approx 1.56$$ 
+
+平均等待时间:4.30(min)
+
+平均服务率：$$\mu = 1/4.30 \approx 0.23$$
+
+系统的服务强度：$$\rho = 6.67 $$
+
+由表~\ref{teble_2}~中得到的数据可以得出乘客在车站的最长等待时间约为8分钟。
+班车到达时间约为5 $\sim$ 10分钟，事实上当等待时间到达10分钟，乘客会选择离开。
+班车的最长到达间隔即为乘客能接受的最长等待时间。
+
+因为服务强度远远大于1，说明系统的服务能力不足以应对到达率，系统会出现排队现象。通过统计数据发现，车站在高峰时期一定会产生排队现象，
+且有较长的阻塞，导致系统的平均等待时间较长。
+排队长度可能会不断增加。如果希望系统稳定运行，需要增加服务能力或降低到达率。通过实际分析，系统在高峰时期更容易产生阻塞，
+可以在高峰时期采用大小区间的方案解决这一问题。分别取t=60、120、180、240进行模拟，可以得到原始方案中用户到达-服务图：
+\begin{figure}[htbp]
+    \center
+    \subfigure[t=60]{\label{601}
+    \includegraphics[width=0.3\textwidth]{figs/chap03/601.png}
+    }\subfigure[t=120]{\label{1201}
+    \includegraphics[width=0.3\textwidth]{figs/chap03/1201.png}
+    }
+    \\
+    \subfigure[t=180]{\label{1801}
+    \includegraphics[width=0.3\textwidth]{figs/chap03/1801.png}
+    }\subfigure[t=240]{\label{2401}
+    \includegraphics[width=0.3\textwidth]{figs/chap03/2401.png}
+    }
+    \caption{系统时间-队列-服务图}\label{fig34}
+\end{figure}
+
+
+系统的时间-队列长度图：
+\begin{figure}[htbp]
+    \center
+    \subfigure[t=60]{\label{602}
+    \includegraphics[width=0.4\textwidth]{figs/chap03/602.png}
+    }\subfigure[t=120]{\label{1202}
+    \includegraphics[width=0.4\textwidth]{figs/chap03/1202.png}
+    }
+    \\
+    \subfigure[t=180]{\label{1802}
+    \includegraphics[width=0.4\textwidth]{figs/chap03/1802.png}
+    }\subfigure[t=240]{\label{2402}
+    \includegraphics[width=0.4\textwidth]{figs/chap03/2402.png}
+    }
+    \caption{系统时间-队列长度图}\label{fig35}
+\end{figure}
+
+系统的时间-等待时间图：
+\begin{figure}[htbp]
+    \center
+    \subfigure[t=60]{\label{603}
+    \includegraphics[width=0.45\textwidth]{figs/chap03/603.png}
+    }\subfigure[t=120]{\label{1203}
+    \includegraphics[width=0.45\textwidth]{figs/chap03/1203.png}
+    }
+    \\
+    \subfigure[t=180]{\label{1803}
+    \includegraphics[width=0.45\textwidth]{figs/chap03/1803.png}
+    }\subfigure[t=240]{\label{2403}
+    \includegraphics[width=0.45\textwidth]{figs/chap03/2403.png}
+    }
+    \caption{系统时间-等待时间图}\label{fig36}
+\end{figure}
+
+由图~\ref{fig34}~到图~\ref{fig36}~可以看出当前运营方案下，在一定运行时间下，系统必定会产生排队阻塞现象。
+且乘客的平均等待时间较长。
+% 现有运营方案下，校园公交人流量高峰时期常采用多车次连续发车的方法，
+% 由于公交线路站点大多均匀坐落在校园主干道上，高峰时期车辆行进速度也会受到主干道交通环境影响，
+% 导致部分站点排队时间较长；非高峰时期，为考虑运营成本，公交会在始发站待乘客达到一定数量后再发车，
+% 导致在非始发站点等待时间过长，现有的调度策略存在滞后性。通过对客流大数据进行挖掘分析，
+% 运用机器学习算法对客流量模式进行识别，通过该模式建立数学模型，
+% 使用运筹学方法从成本、效益、乘客舒适度等多个角度出发，对公交站定址、
+% 调度策略等特征进行优化，最终解决现有策略下校园公共交通系统中的缺陷。
 
 \subsection{单服务台负指数分布排队系统建模}
-
 在一个由k个串行车站组成的排队系统中，每个车站的服务时间相互独立，服从参数为$k\mu$的负指数分布，
 而整个系统的服务时间则服从$k$阶爱尔朗分布。与指数分布相比，爱尔朗分布族具有更大的适应性。
 值得注意的是，当k=1时，爱尔朗分布化为负指数分布，并可进一步推导出对于单个车站而言，到达人数近似服从泊松分布，
